@@ -5,7 +5,7 @@ The purpose of this early beta is _not_ to be a final version of the product, bu
 
 * Getting comfortable with version control
 * Getting familiar with the app/cordova build process
-* Leveraging the free meteor deployment server to test features I was previously unable to test locally (things that require SSL, etc.)
+* Leveraging the free meteor deployment server to test features I was previously unable to test locally (that require SSL, etc.)
 * Implementing the most basic possible version (MVP) of the feature set of Dyer Ink with Meteor, before the production rollout.
 
 For a large scale production app processing financial information, familiarity with the above systems will be a *must*.
