@@ -13,31 +13,31 @@ The primary purpose will be:
 
 ### Client build
 
-[] Static pages with content (Why sharks, etc.)
-[] Routes (with iron:router) providing access to different areas of the site
-[] Templated interface with consistent navigation
-[] Dynamically generated content from database (populated by admin)
-[] Front end of store
-[] Contact form
+[ ] Static pages with content (Why sharks, etc.)
+[ ] Routes (with iron:router) providing access to different areas of the site
+[ ] Templated interface with consistent navigation
+[ ] Dynamically generated content from database (populated by admin)
+[ ] Front end of store
+[ ] Contact form
 
 ### Admin Panel
 
-[] Properly signed .apk
-[] Secure sign-in
-[] Input sanitization
-[] Image capture
-[] Image upload
-[] Image-product association
-[] Persistent database
-[] Object store with product information
-[] Google sign-in(?)
+[ ] Properly signed .apk
+[ ] Secure sign-in
+[ ] Input sanitization
+[ ] Image capture
+[ ] Image upload
+[ ] Image-product association
+[ ] Persistent database
+[ ] Object store with product information
+[ ] Google sign-in(?)
 
 ### Server
 
-[] REST API test (Tastekid)
-[] PrintAura API connection
-[] Paypal API connection(?)
-[] Secure implementation of the above (will require refactoring the methods [as described here](https://www.meteor.com/tutorials/blaze/security-with-methods))
+[ ] REST API test (Tastekid)
+[ ] PrintAura API connection
+[ ] Paypal API connection(?)
+[ ] Secure implementation of the above (will require refactoring the methods [as described here](https://www.meteor.com/tutorials/blaze/security-with-methods))
 
 ## Not slated for this release:
 
