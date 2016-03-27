@@ -18,7 +18,7 @@ For a large scale production app processing financial information, familiarity w
 
 2. Application build process
 
-   ⋅We have opted for an Android deployment over a web application. This allows for easier creation of new item listings (the camera of the device can be accessed directly) and for drafts to be created and stored locally at any time, then published when connected to the internet (in contrast to a web page).
+   We have opted for an Android deployment over a web application. This allows for easier creation of new item listings (the camera of the device can be accessed directly) and for drafts to be created and stored locally at any time, then published when connected to the internet (in contrast to a web page).
 
    Accordingly, during the course of development, the application will need to be compiled hundreds of times. If there is a flaw in the toolchain, a missing dependency, or other issue _not with the code_, it has to be worked out beforehand to prevent huge wastes of time later.
 
@@ -68,6 +68,6 @@ Now that you know why this exists, let's take a look at our goals! This will be 
 
 ## Not slated for this release:
 
-* Full shopping cart/checkout (requires the final, secure server)
+* Full shopping cart/checkout (requires the final, secure server, since we'll be tying everything to its security certificate)
 * Finalized UI (client or admin)
-* Publish to DyerInk.com
+* Publishing to DyerInk.com (it will only be available on a meteor subdomain)
