@@ -1,14 +1,14 @@
-<head>
-  <title>dyerinkbeta</title>
-</head>
+<template name="home">
+    <p>Welcome to the Dyer Ink Beta.</p>
+</template>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
+<template name="dsh">
+    <h2>Admin login</h2>
+</template>
 
-  {{> hello}}
-</body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="main">
+    <h1>Dyer Ink Beta</h1>
+    {{> yield}}
+    <hr />
+    <p>Copyright &copy; Heretikos, LLC 2014-2016.</p>
 </template>
