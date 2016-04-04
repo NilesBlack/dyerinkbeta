@@ -1,0 +1,22 @@
+<template name="addItem">
+    <h2>Add Item</h2>
+     <input type="text" placeholder="Item Name" pattern="\W" class="fullWidth" required="required" />
+     <input type="number" placeholder="Item Price" pattern="^(?!\s*$).+" step="0.01" class="fullWidth" required="required" />
+     
+     <!-- Camera Buttons -->
+     <input type="file" accept="image/*" id="takePicture" capture="camera" value="Take Picture" /> <input type="file" accept="image/*" id="capture" value="Open Gallery" capture  />
+     <label class="fullWidth"><input type="checkbox" name="printauraBool" />Printaura Item</label>
+     <select name="paProduct" value="unselected" class="fullWidth">
+          <option value="unselected" selected disabled>Item Category</option>
+          <option value="sweatshirt">Sweatshirt</option>
+          <option value="tshirt">T-shirt</option>
+          <option value="print">Print</option>
+     </select>
+     <div id="options1" class="halfWidth">
+          
+     </div>
+     <div id="option2" class="halfWidth">
+          
+     </div>
+     <input type="button" value="Draft" class="halfWidth" id="cancelButton" /><input type="submit" value="Publish" class="halfWidth" />
+</template>

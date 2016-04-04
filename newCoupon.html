@@ -1,0 +1,14 @@
+<template name="newCoupon">
+     <h2>New Coupon</h2>
+     <input type="text" placeholder="Coupon Code" class="fullWidth" required="required" />
+     <input type="number" placeholder="Discount amount" class="fullWidth" required="required" step="0.01" />
+     <label class="halfWidth"><input type="radio" name="discountType" value="percentage" required="required" />&#36; off</label> <label class="halfWidth"><input type="radio" name="discountType" value="dollars" />&#37; off</label>
+     <hr />
+     <h3>Allowed Categories:</h3>
+     <label class="fullWidth"><input type="checkbox" />Sweatshirts</label>
+     <label class="fullWidth"><input type="checkbox" />T-shirts</label>
+     <label class="fullWidth"><input type="checkbox" />Prints</label>
+     <input type="number" step="1" required="required" placeholder="Number of allowed uses" class="fullWidth" />
+     <input type="date" required="required" class="fullWidth" />
+     <input type="button" value="Delete" class="halfWidth" id="cancelButton" /><input type="submit" value="Save" class="halfWidth" />
+</template>

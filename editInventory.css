@@ -1,0 +1,28 @@
+.product {
+     display:block;
+     padding:20px;
+     border:1px dashed black;
+     padding:40px;
+}
+
+.product img {
+     border:1px solid black;
+     margin-right:25px;
+     width:20%;
+     clear:left;
+}
+
+.product p {
+     font-size:2.5em;
+     float:right;
+}
+
+.unpublished {
+     background-color:silver;
+     border:1px solid red;
+}
+
+.published {
+     background-color:gray;
+     border:1px solid green;
+}

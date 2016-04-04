@@ -1,0 +1,18 @@
+body {
+     background-color:rgb(200,200,255);
+}
+
+.mainButton
+{
+    width:100%;
+    height:150px;
+    background-color:rgb(50,50,255);
+    color:white;
+    padding:20px;
+    font-weight:bold;
+    font-size:2em;
+    box-sizing: border-box;
+    border-radius:20px;
+    text-align:center;
+    margin-bottom:1%;
+}

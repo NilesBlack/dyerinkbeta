@@ -16,3 +16,7 @@ Router.route('/', {
 
 Router.route('/whysharks');
 Router.route('/dsh');
+Router.route('/adminMain');
+Router.route('/newCoupon');
+Router.route('/editInventory');
+Router.route('/addItem');
