@@ -51,7 +51,7 @@ Now that you know why this exists, let's take a look at our goals! This will be 
 
 ### Admin Panel
 
-- [*] Page Templates
+- [x] Page Templates
 - [ ] Properly signed .apk
 - [ ] Secure sign-in
 - [ ] Input sanitization
