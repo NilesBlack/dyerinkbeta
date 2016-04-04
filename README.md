@@ -29,6 +29,8 @@ For a large scale production app processing financial information, familiarity w
    ~~Using Meteor's free deployment server, [the current version of the app](http://dyer.meteor.com), up to _the very second_, can be viewed at any time, from anywhere. This *hugely* benefits the testing process.~~
    
    Aaaaaannnnddd, it looks like **Meteor literally [_just_ discontinued the free tier of their deployment server](https://forums.meteor.com/t/meteor-com-free-hosting-ends-march-25-2016/19308) for testing**. So... Yeah.
+   
+   Well, if you're connected to Halstead-Basement, you can access it on the local network [here](10.0.1.72:3000).
 
 4. **Creating the MVP**
 
