@@ -21,6 +21,8 @@ For a large scale production app processing financial information, familiarity w
    We have opted for an Android deployment over a web application. This allows for easier creation of new item listings (the camera of the device can be accessed directly) and for drafts to be created and stored locally at any time, then published when connected to the internet (in contrast to a web page).
 
    Accordingly, during the course of development, the application will need to be compiled hundreds of times. If there is a flaw in the toolchain, a missing dependency, or other issue _not with the code_, it has to be worked out beforehand to prevent huge wastes of time later.
+   
+   *Note: Test application is now available for download [here](http://nilesblack.com/production.apk)!*
 
 3. **Meteor deployment Server**
 
