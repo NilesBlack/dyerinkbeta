@@ -68,6 +68,8 @@ Now that you know why this exists, let's take a look at our goals! This will be 
 
 ### Server
 
+- [x] Email server for special requests
+- [ ] Automatically register bug reports as 'Issues' in Github
 - [ ] REST API test (Tastekid)
 - [x] Functional compilation toolchain for Android
 - [ ] PrintAura API connection
