@@ -49,7 +49,7 @@ Now that you know why this exists, let's take a look at our goals! This will be 
 - [x] Static pages with content (Why sharks, etc.)
 - [x] Routes (with iron:router) providing access to different areas of the site
 - [ ] Templated interface with consistent navigation
-- [ ] Dynamically generated content from database (populated by admin)
+- [x] Dynamically generated content from database (populated by admin)
 - [ ] Front end of store
 - [ ] Contact form
 
@@ -62,8 +62,8 @@ Now that you know why this exists, let's take a look at our goals! This will be 
 - [ ] Image capture
 - [ ] Image upload
 - [ ] Image-product association
-- [ ] Persistent database
-- [ ] Object store with product information
+- [x] Persistent database
+- [x] Object store with product information
 - [ ] Google sign-in(?)
 
 ### Server
