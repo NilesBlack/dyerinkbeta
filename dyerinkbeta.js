@@ -1,3 +1,8 @@
+import { Mongo } from 'meteor/mongo';
+ 
+export const Coupons = new Mongo.Collection('coupons');
+export const Inventory = new Mongo.Collection('inventory');
+
 Router.configure({
     layoutTemplate: 'main'
 });
@@ -24,17 +29,21 @@ if(Meteor.isServer) {
 
 if(Meteor.isClient) {
     Template.addItem.events({
-        'submit .new-task'(event) {
+        'submit .newItem'(event) {
             event.preventDefault();
-            console.log("emailing");
-            Meteor.call('sendEmail',
-                'recipient@example.com',
-                'sender@example.com',
-                'Subject',
-                'The actual body of the message. Just replace all the above with correct information.');
+            const itemName = event.target.itemName.value;
+            const itemPrice = event.target.itemPrice.value;
+            const paBool = event.target.printauraBool.value;
+            const paProductType = event.target.paProductType.value;
+            Inventory.insert({
+                
+            });
+            toastr.success("Your item: " + event.target.itemName.value + " has been submitted", "Item submitted");
         }
     });
-
+    Template.addItem.helpers({
+        
+    });
 }
 
 Router.route('/', {
@@ -47,3 +56,14 @@ Router.route('/adminMain');
 Router.route('/newCoupon');
 Router.route('/editInventory');
 Router.route('/addItem');
+
+
+/*CODE FOR SENDING EMAIL
+
+Meteor.call('sendEmail',
+                'recipient@example.com',
+                'sender@example.com',
+                'Subject',
+                'The actual body of the message. Just replace all the above with correct information.');
+                
+                */
