@@ -9,7 +9,9 @@ content="width=400, initial-scale=1" />
 <template name="home">
     <p>Welcome to the Dyer Ink Beta.</p>
     <p>
+        {{#if isCordova}}
         <a href="/adminMain">Admin Home</a><br />
+        {{/if}}
         <a href="/whysharks">Why Sharks?</a><br />
     </p>
 </template>

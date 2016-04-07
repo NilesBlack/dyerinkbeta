@@ -75,6 +75,9 @@ Now that you know why this exists, let's take a look at our goals! This will be 
 - [ ] PrintAura API connection
 - [ ] Paypal API connection(?)
 - [ ] Secure implementation of the above (will require refactoring the methods [as described here](https://www.meteor.com/tutorials/blaze/security-with-methods))
+- [x] Find public server that can run Meteor/Node.js apps
+- [x] Install Meteor on said server, clone git repo
+- [x] Create SSL connection for said server
 
 ## Not slated for this release:
 

@@ -61,6 +61,16 @@ if(Meteor.isClient) {
             return Inventory.find({}).count();
         }
     });
+    Template.home.helpers({
+        isCordova() {
+            if(Meteor.isCordova) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+    });
 }
 
 Router.route('/', {
