@@ -33,16 +33,33 @@ if(Meteor.isClient) {
             event.preventDefault();
             const itemName = event.target.itemName.value;
             const itemPrice = event.target.itemPrice.value;
-            const paBool = event.target.printauraBool.value;
-            const paProductType = event.target.paProductType.value;
+            //const paBool = event.target.printauraBool.value;
+            //const paProductType = event.target.paProductType.value;
             Inventory.insert({
-                
+                itemName : itemName,
+                itemPrice : itemPrice,
+                //paBool : paBool,
+                //paProductType : paProductType
             });
-            toastr.success("Your item: " + event.target.itemName.value + " has been submitted", "Item submitted");
+            toastr.success("Your item: " + itemName + " has been submitted", "Item submitted");
+            setTimeout(function() {window.location="../editInventory"}, 1500);
+        },
+        'click #cancelButton'(event) {
+            Inventory.remove(this._id);
+            toastr.info("Deletion request has been submitted");
+            setTimeout(function() {window.location="../editInventory"}, 1500);
         }
     });
     Template.addItem.helpers({
         
+    });
+    Template.editInventory.helpers({
+        inventory() {
+            return Inventory.find({});
+        },
+        itemCount() {
+            return Inventory.find({}).count();
+        }
     });
 }
 
@@ -51,11 +68,23 @@ Router.route('/', {
 });
 
 Router.route('/whysharks');
-Router.route('/dsh');
-Router.route('/adminMain');
-Router.route('/newCoupon');
-Router.route('/editInventory');
-Router.route('/addItem');
+
+//if(Meteor.isCordova) {
+    Router.route('/dsh');
+    Router.route('/adminMain');
+    Router.route('/newCoupon');
+    Router.route('/editInventory');
+    Router.route('/addItem');
+//}
+
+Router.route('/addItem/:itemID', function () {
+  var itemID = this.params.itemID; 
+  this.render('addItem', {
+    data: function () {
+      return Inventory.findOne({_id: itemID});
+    }
+  });
+});
 
 
 /*CODE FOR SENDING EMAIL
